@@ -2,6 +2,19 @@
 
 pragma solidity ^0.8.4;
 
+/**
+  
+   CASH TOKEN contract v1.01
+   
+   CASH Token features:
+   0.8% total transaction fee, of which:
+   
+     0.4% fee: automatically destroyed (burned)
+     0.4% fee: automatically and instantly distributed to all CASH token holders
+
+   (c) Copyright 2021 cash.cx  
+    
+ */
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -152,7 +165,7 @@ contract TestToken is Context, IBEP20, Ownable {
 
     address[] private _excluded;
 
-    string private     _name = "CopyCash Token";
+    string private     _name = "Cash Token";
     string private   _symbol = "CCX";
     uint8 private  _decimals = 18;
 
